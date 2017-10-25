@@ -1,0 +1,90 @@
+@import 'vars';
+
+@mixin reset() {
+  margin: 0;
+  padding: 0;
+}
+
+
+// Grid mixins based on Bourbon Neat syntax
+
+@mixin grid-container() {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin grid-column($ratio) {
+    box-sizing: border-box;
+    width: $ratio * 100%;
+    padding-left: $half-gutter;
+    padding-right: $half-gutter;
+}
+
+@mixin grid-push($ratio) {
+    margin-left: $ratio * 100%;
+}
+
+@mixin grid-collapse() {
+    margin-left: -1 * $half-gutter;
+    margin-right: -1 * $half-gutter;
+}
+
+@mixin grid-no-gutter() {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@mixin grid-media($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+
+// Test setup
+
+@mixin text-setup(
+  $stack: $serif,
+  $size: 1.4rem,
+  $color: $clr-body,
+  $leading: $baseline * 2,
+  $weight: 400,
+  $style: normal,
+  $padtop: 0,
+  $padbot: 0,
+  $decoration: none
+) {
+  font-family: $stack;
+  font-size: $size;
+  line-height: $leading;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+  padding-top: $padtop;
+  padding-bottom: $padbot;
+  text-decoration: $decoration;
+}
+
+
+
+// Bourbon notes for reference
+
+.nix {
+  @include box-sizing(border-box);
+  @include clearfix;
+  @include hide-text;
+  @include position(relative, 0 null null 10em);
+
+  #{$all-text-inputs} {
+    border: 1px solid #f00;
+  }
+
+  #{$all-text-inputs-focus},
+  #{$all-text-inputs-hover} {
+    border: 1px solid #0f0;
+  }
+
+  #{$all-text-inputs-active} {
+    border: 1px solid #00f;
+  }
+}

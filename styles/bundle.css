@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css?family=Manuale:400,400i,600,600i|Rokkitt:400,600");
+@import url(normalize/normalize.css);
+.nix {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  position: relative;
+  top: 0;
+  left: 10em; }
+  .nix::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .nix input[type="color"], .nix input[type="date"], .nix input[type="datetime"], .nix input[type="datetime-local"], .nix input[type="email"], .nix input[type="month"], .nix input[type="number"], .nix input[type="password"], .nix input[type="search"], .nix input[type="tel"], .nix input[type="text"], .nix input[type="time"], .nix input[type="url"], .nix input[type="week"], .nix input:not([type]), .nix textarea {
+    border: 1px solid #f00; }
+  .nix input[type="color"]:focus, .nix input[type="date"]:focus, .nix input[type="datetime"]:focus, .nix input[type="datetime-local"]:focus, .nix input[type="email"]:focus, .nix input[type="month"]:focus, .nix input[type="number"]:focus, .nix input[type="password"]:focus, .nix input[type="search"]:focus, .nix input[type="tel"]:focus, .nix input[type="text"]:focus, .nix input[type="time"]:focus, .nix input[type="url"]:focus, .nix input[type="week"]:focus, .nix input:not([type]):focus, .nix textarea:focus,
+  .nix input[type="color"]:hover, .nix input[type="date"]:hover, .nix input[type="datetime"]:hover, .nix input[type="datetime-local"]:hover, .nix input[type="email"]:hover, .nix input[type="month"]:hover, .nix input[type="number"]:hover, .nix input[type="password"]:hover, .nix input[type="search"]:hover, .nix input[type="tel"]:hover, .nix input[type="text"]:hover, .nix input[type="time"]:hover, .nix input[type="url"]:hover, .nix input[type="week"]:hover, .nix input:not([type]):hover, .nix textarea:hover {
+    border: 1px solid #0f0; }
+  .nix input[type="color"]:active, .nix input[type="date"]:active, .nix input[type="datetime"]:active, .nix input[type="datetime-local"]:active, .nix input[type="email"]:active, .nix input[type="month"]:active, .nix input[type="number"]:active, .nix input[type="password"]:active, .nix input[type="search"]:active, .nix input[type="tel"]:active, .nix input[type="text"]:active, .nix input[type="time"]:active, .nix input[type="url"]:active, .nix input[type="week"]:active, .nix input:not([type]):active, .nix textarea:active {
+    border: 1px solid #00f; }
+
+.nix {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  position: relative;
+  top: 0;
+  left: 10em; }
+  .nix::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .nix input[type="color"], .nix input[type="date"], .nix input[type="datetime"], .nix input[type="datetime-local"], .nix input[type="email"], .nix input[type="month"], .nix input[type="number"], .nix input[type="password"], .nix input[type="search"], .nix input[type="tel"], .nix input[type="text"], .nix input[type="time"], .nix input[type="url"], .nix input[type="week"], .nix input:not([type]), .nix textarea {
+    border: 1px solid #f00; }
+  .nix input[type="color"]:focus, .nix input[type="date"]:focus, .nix input[type="datetime"]:focus, .nix input[type="datetime-local"]:focus, .nix input[type="email"]:focus, .nix input[type="month"]:focus, .nix input[type="number"]:focus, .nix input[type="password"]:focus, .nix input[type="search"]:focus, .nix input[type="tel"]:focus, .nix input[type="text"]:focus, .nix input[type="time"]:focus, .nix input[type="url"]:focus, .nix input[type="week"]:focus, .nix input:not([type]):focus, .nix textarea:focus,
+  .nix input[type="color"]:hover, .nix input[type="date"]:hover, .nix input[type="datetime"]:hover, .nix input[type="datetime-local"]:hover, .nix input[type="email"]:hover, .nix input[type="month"]:hover, .nix input[type="number"]:hover, .nix input[type="password"]:hover, .nix input[type="search"]:hover, .nix input[type="tel"]:hover, .nix input[type="text"]:hover, .nix input[type="time"]:hover, .nix input[type="url"]:hover, .nix input[type="week"]:hover, .nix input:not([type]):hover, .nix textarea:hover {
+    border: 1px solid #0f0; }
+  .nix input[type="color"]:active, .nix input[type="date"]:active, .nix input[type="datetime"]:active, .nix input[type="datetime-local"]:active, .nix input[type="email"]:active, .nix input[type="month"]:active, .nix input[type="number"]:active, .nix input[type="password"]:active, .nix input[type="search"]:active, .nix input[type="tel"]:active, .nix input[type="text"]:active, .nix input[type="time"]:active, .nix input[type="url"]:active, .nix input[type="week"]:active, .nix input:not([type]):active, .nix textarea:active {
+    border: 1px solid #00f; }
+
+img {
+  max-width: 100%; }
+
+button,
+.btn {
+  border: none;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: white;
+  font-family: "Rokkitt", serif;
+  background-color: #44BC24;
+  transition: all 0.2s linear; }
+  button:hover,
+  .btn:hover {
+    background-color: #86E86B;
+    color: #524B47; }
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea {
+  border: none;
+  color: #524B47;
+  font-size: 1.8rem;
+  font-family: "Rokkitt", serif; }
+
+.nix {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  position: relative;
+  top: 0;
+  left: 10em; }
+  .nix::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .nix input[type="color"], .nix input[type="date"], .nix input[type="datetime"], .nix input[type="datetime-local"], .nix input[type="email"], .nix input[type="month"], .nix input[type="number"], .nix input[type="password"], .nix input[type="search"], .nix input[type="tel"], .nix input[type="text"], .nix input[type="time"], .nix input[type="url"], .nix input[type="week"], .nix input:not([type]), .nix textarea {
+    border: 1px solid #f00; }
+  .nix input[type="color"]:focus, .nix input[type="date"]:focus, .nix input[type="datetime"]:focus, .nix input[type="datetime-local"]:focus, .nix input[type="email"]:focus, .nix input[type="month"]:focus, .nix input[type="number"]:focus, .nix input[type="password"]:focus, .nix input[type="search"]:focus, .nix input[type="tel"]:focus, .nix input[type="text"]:focus, .nix input[type="time"]:focus, .nix input[type="url"]:focus, .nix input[type="week"]:focus, .nix input:not([type]):focus, .nix textarea:focus,
+  .nix input[type="color"]:hover, .nix input[type="date"]:hover, .nix input[type="datetime"]:hover, .nix input[type="datetime-local"]:hover, .nix input[type="email"]:hover, .nix input[type="month"]:hover, .nix input[type="number"]:hover, .nix input[type="password"]:hover, .nix input[type="search"]:hover, .nix input[type="tel"]:hover, .nix input[type="text"]:hover, .nix input[type="time"]:hover, .nix input[type="url"]:hover, .nix input[type="week"]:hover, .nix input:not([type]):hover, .nix textarea:hover {
+    border: 1px solid #0f0; }
+  .nix input[type="color"]:active, .nix input[type="date"]:active, .nix input[type="datetime"]:active, .nix input[type="datetime-local"]:active, .nix input[type="email"]:active, .nix input[type="month"]:active, .nix input[type="number"]:active, .nix input[type="password"]:active, .nix input[type="search"]:active, .nix input[type="tel"]:active, .nix input[type="text"]:active, .nix input[type="time"]:active, .nix input[type="url"]:active, .nix input[type="week"]:active, .nix input:not([type]):active, .nix textarea:active {
+    border: 1px solid #00f; }
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  blockquote p {
+    color: #4768AA;
+    font-style: italic; }
+  blockquote cite {
+    display: block;
+    font-family: "Manuale", serif;
+    font-size: 1.4rem;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #524B47;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    text-align: right; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manuale", serif;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #524B47;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: none; }
+
+dl, ul, ol {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  margin-left: 30px;
+  padding-left: 0; }
+  dl.unstyled, ul.unstyled, ol.unstyled {
+    margin-left: 0; }
+    dl.unstyled > li, ul.unstyled > li, ol.unstyled > li {
+      list-style: none; }
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Rokkitt", serif;
+  font-size: 5.4rem;
+  line-height: 60px;
+  font-weight: 400;
+  font-style: normal;
+  color: #4768AA;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  text-decoration: none; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Rokkitt", serif;
+  font-size: 4.2rem;
+  line-height: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: #44BC24;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none; }
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Rokkitt", serif;
+  font-size: 2.4rem;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #44BC24;
+  padding-top: 8px;
+  padding-bottom: 2px;
+  text-decoration: none; }
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Rokkitt", serif;
+  font-size: 1.8rem;
+  line-height: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: #44BC24;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  text-decoration: none; }
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px; }
+
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "Manuale", serif;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #524B47;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: none; }
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Manuale", serif;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #524B47;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  text-decoration: none; }
+
+.nix {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  position: relative;
+  top: 0;
+  left: 10em; }
+  .nix::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .nix input[type="color"], .nix input[type="date"], .nix input[type="datetime"], .nix input[type="datetime-local"], .nix input[type="email"], .nix input[type="month"], .nix input[type="number"], .nix input[type="password"], .nix input[type="search"], .nix input[type="tel"], .nix input[type="text"], .nix input[type="time"], .nix input[type="url"], .nix input[type="week"], .nix input:not([type]), .nix textarea {
+    border: 1px solid #f00; }
+  .nix input[type="color"]:focus, .nix input[type="date"]:focus, .nix input[type="datetime"]:focus, .nix input[type="datetime-local"]:focus, .nix input[type="email"]:focus, .nix input[type="month"]:focus, .nix input[type="number"]:focus, .nix input[type="password"]:focus, .nix input[type="search"]:focus, .nix input[type="tel"]:focus, .nix input[type="text"]:focus, .nix input[type="time"]:focus, .nix input[type="url"]:focus, .nix input[type="week"]:focus, .nix input:not([type]):focus, .nix textarea:focus,
+  .nix input[type="color"]:hover, .nix input[type="date"]:hover, .nix input[type="datetime"]:hover, .nix input[type="datetime-local"]:hover, .nix input[type="email"]:hover, .nix input[type="month"]:hover, .nix input[type="number"]:hover, .nix input[type="password"]:hover, .nix input[type="search"]:hover, .nix input[type="tel"]:hover, .nix input[type="text"]:hover, .nix input[type="time"]:hover, .nix input[type="url"]:hover, .nix input[type="week"]:hover, .nix input:not([type]):hover, .nix textarea:hover {
+    border: 1px solid #0f0; }
+  .nix input[type="color"]:active, .nix input[type="date"]:active, .nix input[type="datetime"]:active, .nix input[type="datetime-local"]:active, .nix input[type="email"]:active, .nix input[type="month"]:active, .nix input[type="number"]:active, .nix input[type="password"]:active, .nix input[type="search"]:active, .nix input[type="tel"]:active, .nix input[type="text"]:active, .nix input[type="time"]:active, .nix input[type="url"]:active, .nix input[type="week"]:active, .nix input:not([type]):active, .nix textarea:active {
+    border: 1px solid #00f; }
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 0;
+  background-color: #524B47; }
+  .footer p {
+    color: white; }
+
+.footer__staff {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0; }
+  .footer__staff li {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 570px) {
+      .footer__staff li {
+        box-sizing: border-box;
+        width: 50%;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 20px; } }
+  @media screen and (min-width: 1020px) {
+    .footer__staff {
+      box-sizing: border-box;
+      width: 66.66667%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+
+.staff__name {
+  display: block;
+  color: #86E86B;
+  font-size: 1.8rem; }
+
+.staff__title {
+  display: block; }
+
+.footer__text {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0;
+  padding-right: 0; }
+  @media screen and (min-width: 1020px) {
+    .footer__text {
+      box-sizing: border-box;
+      width: 33.33333%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+
+.footer__copyright {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px; }
+  @media screen and (min-width: 570px) {
+    .footer__copyright {
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1020px) {
+    .footer__copyright {
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+
+.footer__partnership {
+  font-size: 1.8rem;
+  font-family: "Rokkitt", serif;
+  line-height: 4rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px; }
+  @media screen and (min-width: 570px) {
+    .footer__partnership {
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-top: 20px; } }
+  @media screen and (min-width: 1020px) {
+    .footer__partnership {
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+  .footer__partnership img {
+    position: relative;
+    top: 14.5px;
+    left: 2px;
+    margin-top: -40px; }
+
+.nix {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  position: relative;
+  top: 0;
+  left: 10em; }
+  .nix::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .nix input[type="color"], .nix input[type="date"], .nix input[type="datetime"], .nix input[type="datetime-local"], .nix input[type="email"], .nix input[type="month"], .nix input[type="number"], .nix input[type="password"], .nix input[type="search"], .nix input[type="tel"], .nix input[type="text"], .nix input[type="time"], .nix input[type="url"], .nix input[type="week"], .nix input:not([type]), .nix textarea {
+    border: 1px solid #f00; }
+  .nix input[type="color"]:focus, .nix input[type="date"]:focus, .nix input[type="datetime"]:focus, .nix input[type="datetime-local"]:focus, .nix input[type="email"]:focus, .nix input[type="month"]:focus, .nix input[type="number"]:focus, .nix input[type="password"]:focus, .nix input[type="search"]:focus, .nix input[type="tel"]:focus, .nix input[type="text"]:focus, .nix input[type="time"]:focus, .nix input[type="url"]:focus, .nix input[type="week"]:focus, .nix input:not([type]):focus, .nix textarea:focus,
+  .nix input[type="color"]:hover, .nix input[type="date"]:hover, .nix input[type="datetime"]:hover, .nix input[type="datetime-local"]:hover, .nix input[type="email"]:hover, .nix input[type="month"]:hover, .nix input[type="number"]:hover, .nix input[type="password"]:hover, .nix input[type="search"]:hover, .nix input[type="tel"]:hover, .nix input[type="text"]:hover, .nix input[type="time"]:hover, .nix input[type="url"]:hover, .nix input[type="week"]:hover, .nix input:not([type]):hover, .nix textarea:hover {
+    border: 1px solid #0f0; }
+  .nix input[type="color"]:active, .nix input[type="date"]:active, .nix input[type="datetime"]:active, .nix input[type="datetime-local"]:active, .nix input[type="email"]:active, .nix input[type="month"]:active, .nix input[type="number"]:active, .nix input[type="password"]:active, .nix input[type="search"]:active, .nix input[type="tel"]:active, .nix input[type="text"]:active, .nix input[type="time"]:active, .nix input[type="url"]:active, .nix input[type="week"]:active, .nix input:not([type]):active, .nix textarea:active {
+    border: 1px solid #00f; }
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 13px 25px; }
+
+.header__logo {
+  line-height: 20px;
+  font-size: 3.2rem;
+  position: relative;
+  left: -2px; }
+
+.header__tagline {
+  font-style: italic;
+  margin-top: 3px; }
+
+.nix {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  position: relative;
+  top: 0;
+  left: 10em; }
+  .nix::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .nix input[type="color"], .nix input[type="date"], .nix input[type="datetime"], .nix input[type="datetime-local"], .nix input[type="email"], .nix input[type="month"], .nix input[type="number"], .nix input[type="password"], .nix input[type="search"], .nix input[type="tel"], .nix input[type="text"], .nix input[type="time"], .nix input[type="url"], .nix input[type="week"], .nix input:not([type]), .nix textarea {
+    border: 1px solid #f00; }
+  .nix input[type="color"]:focus, .nix input[type="date"]:focus, .nix input[type="datetime"]:focus, .nix input[type="datetime-local"]:focus, .nix input[type="email"]:focus, .nix input[type="month"]:focus, .nix input[type="number"]:focus, .nix input[type="password"]:focus, .nix input[type="search"]:focus, .nix input[type="tel"]:focus, .nix input[type="text"]:focus, .nix input[type="time"]:focus, .nix input[type="url"]:focus, .nix input[type="week"]:focus, .nix input:not([type]):focus, .nix textarea:focus,
+  .nix input[type="color"]:hover, .nix input[type="date"]:hover, .nix input[type="datetime"]:hover, .nix input[type="datetime-local"]:hover, .nix input[type="email"]:hover, .nix input[type="month"]:hover, .nix input[type="number"]:hover, .nix input[type="password"]:hover, .nix input[type="search"]:hover, .nix input[type="tel"]:hover, .nix input[type="text"]:hover, .nix input[type="time"]:hover, .nix input[type="url"]:hover, .nix input[type="week"]:hover, .nix input:not([type]):hover, .nix textarea:hover {
+    border: 1px solid #0f0; }
+  .nix input[type="color"]:active, .nix input[type="date"]:active, .nix input[type="datetime"]:active, .nix input[type="datetime-local"]:active, .nix input[type="email"]:active, .nix input[type="month"]:active, .nix input[type="number"]:active, .nix input[type="password"]:active, .nix input[type="search"]:active, .nix input[type="tel"]:active, .nix input[type="text"]:active, .nix input[type="time"]:active, .nix input[type="url"]:active, .nix input[type="week"]:active, .nix input:not([type]):active, .nix textarea:active {
+    border: 1px solid #00f; }
+
+.section {
+  display: flex;
+  flex-flow: row wrap; }
+
+.section--dark {
+  background: #524B47; }
+  .section--dark h2, .section--dark h3, .section--dark h4 {
+    color: #86E86B; }
+  .section--dark label, .section--dark li, .section--dark p {
+    color: white; }
+
+.product__banner {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 240px;
+  background-image: url("/images/windy-road.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .product__banner .product-banner__name {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 5.4rem;
+    line-height: 60px;
+    color: white; }
+  .product__banner .product-banner__tagline {
+    text-align: center;
+    font-size: 2.1rem;
+    line-height: 20px;
+    color: white; }
+  @media screen and (min-width: 760px) {
+    .product__banner {
+      height: 360px;
+      background-position: center -40px; }
+      .product__banner .product-banner__name {
+        margin-top: 180px; } }
+  @media screen and (min-width: 1020px) {
+    .product__banner {
+      height: 480px;
+      background-position: center top; }
+      .product__banner .product-banner__name {
+        margin-top: 300px; } }
+  @media screen and (min-width: 1400px) {
+    .product__banner {
+      height: 600px; } }
+
+.product__mailinglist {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: flex-start;
+  background-color: #2D426B;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  min-height: 120px; }
+
+.mailinglist__form {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-flow: row wrap; }
+  @media screen and (min-width: 1020px) {
+    .mailinglist__form {
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-left: 25%; } }
+  .mailinglist__form input {
+    box-sizing: border-box;
+    width: 75%;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 40px; }
+  .mailinglist__form button {
+    box-sizing: border-box;
+    width: 25%;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 40px; }
+
+.mailinglist__label {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 10px;
+  margin-bottom: 10px; }
+  @media screen and (min-width: 1020px) {
+    .mailinglist__label {
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-left: 25%; } }
+
+.product__details {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  min-height: 240px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.details__description {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px; }
+  @media screen and (min-width: 1020px) {
+    .details__description {
+      box-sizing: border-box;
+      width: 41.66667%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+
+.details__features {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px; }
+  @media screen and (min-width: 1020px) {
+    .details__features {
+      box-sizing: border-box;
+      width: 58.33333%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+  .details__features h4 {
+    margin-top: 8px;
+    margin-bottom: 2px; }
+
+.about {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.about__customers {
+  box-sizing: border-box;
+  width: 1200%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-left: 0;
+  padding-right: 0; }
+  .about__customers h4 {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px; }
+  .about__customers ul {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center; }
+  .about__customers li {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    max-width: 50%;
+    padding-left: 25px;
+    padding-right: 25px; }
+  @media screen and (min-width: 1020px) {
+    .about__customers ul {
+      justify-content: space-between; }
+    .about__customers li:nth-child(2),
+    .about__customers li:nth-child(3),
+    .about__customers li:nth-child(6) {
+      margin-left: 50px;
+      margin-right: 50px; }
+    .about__customers li:nth-child(5) {
+      margin-left: 8.33333%; }
+    .about__customers li:last-child {
+      margin-right: 8.33333%; } }
+
+.about__testimonial {
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: 1200%;
+  padding-left: 25px;
+  padding-right: 25px; }
+  @media screen and (min-width: 760px) {
+    .about__testimonial {
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1020px) {
+    .about__testimonial {
+      box-sizing: border-box;
+      width: 41.66667%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+  .about__testimonial img {
+    display: block;
+    margin: 0 auto; }
+
+.about__text {
+  box-sizing: border-box;
+  width: 1200%;
+  padding-left: 25px;
+  padding-right: 25px; }
+  @media screen and (min-width: 760px) {
+    .about__text {
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1020px) {
+    .about__text {
+      box-sizing: border-box;
+      width: 58.33333%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+
+/*# sourceMappingURL=bundle.css.map */

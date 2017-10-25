@@ -1,0 +1,111 @@
+@import 'vars';
+@import 'mixins';
+
+blockquote {
+  @include reset;
+  margin-top: $baseline;
+  margin-bottom: $baseline;
+  p {
+    color: $clr-primary;
+    font-style: italic;
+  }
+  cite {
+    display: block;
+    @include text-setup(
+      $color: $clr-body,
+      $style: normal,
+      $padtop: 4px,
+      $padbot: 6px
+    );
+    text-align: right;
+  }
+}
+
+body {
+  @include reset;
+  @include text-setup;
+}
+
+dl, ul, ol {
+  @include reset;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  margin-left: 30px;
+  padding-left: 0;
+  &.unstyled {
+    margin-left: 0;
+    & > li {
+      list-style: none;
+    }
+  }
+}
+
+h1 {
+  @include reset;
+  @include text-setup(
+    $stack: $slab,
+    $size: 5.4rem,
+    $leading: $baseline * 6,
+    $color: $clr-primary,
+    $padtop: 6px,
+    $padbot: 3px
+  );
+}
+
+h2 {
+  @include reset;
+  @include text-setup(
+    $stack: $slab,
+    $size: 4.2rem,
+    $leading: $baseline * 5,
+    $color: $clr-secondary,
+    $padtop: 5px,
+    $padbot: 5px
+  );
+}
+
+h3 {
+  @include reset;
+  @include text-setup(
+    $stack: $slab,
+    $size: 2.4rem,
+    $leading: $baseline * 3,
+    $color: $clr-secondary,
+    $padtop: 8px,
+    $padbot: 2px
+  );
+}
+
+h4 {
+  @include reset;
+  @include text-setup(
+    $stack: $slab,
+    $size: 1.8rem,
+    $leading: $baseline * 2,
+    $color: $clr-secondary,
+    $weight: 600,
+    $padtop: 6px,
+    $padbot: 4px
+  );
+}
+
+html {
+  @include reset;
+  font-size: $baseline;
+}
+
+li {
+  @include reset;
+  @include text-setup(
+    $padtop: 0,
+    $padbot: 0
+  );
+}
+
+p {
+  @include reset;
+  @include text-setup(
+    $padtop: 4px,
+    $padbot: 6px
+  );
+}

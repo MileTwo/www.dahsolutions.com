@@ -1,0 +1,22 @@
+@import '../defaults/vars';
+@import '../defaults/mixins';
+
+.header {
+    @include grid-container;
+    justify-content: space-between;
+    height: $row;
+    box-sizing: border-box;
+    background-color: $clr-light;
+    padding: 13px $half-gutter;
+}
+
+.header__logo {
+  line-height: $baseline * 2;
+  font-size: 3.2rem;
+  @include position(relative, null null null -2px);
+}
+
+.header__tagline {
+  font-style: italic;
+  margin-top: 3px;
+}

@@ -1,0 +1,30 @@
+@import 'vars';
+@import 'mixins';
+
+
+img {
+    max-width: 100%;
+}
+
+button,
+.btn {
+  border: none;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: $clr-light;
+  font-family: $slab;
+  background-color: $clr-secondary;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: $clr-secondary-lt;
+    color: $clr-body;
+  }
+}
+
+
+#{$all-text-inputs} {
+  border: none;
+  color: $clr-body;
+  font-size: 1.8rem;
+  font-family: $slab;
+}

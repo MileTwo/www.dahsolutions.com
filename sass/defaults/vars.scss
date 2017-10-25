@@ -1,0 +1,27 @@
+// Grid settings
+
+$baseline: 10px;
+$row: $baseline * 6;
+$gutter: 50px;
+$half-gutter: $gutter / 2;
+$break-tablet: 760px;
+$break-desktop: 1020px;
+$break-wide: 1400px;
+
+
+// Colors
+
+$clr-light: white;
+$clr-primary: #4768AA;
+$clr-primary-dk: #2D426B;
+$clr-secondary: #44BC24;
+$clr-secondary-lt: #86E86B;
+$clr-body: #524B47;
+$clr-hyperlink: #009FD6;
+$clr-hyperlink-lt: #50CAF2;
+
+
+// Type
+
+$slab: 'Rokkitt', serif;
+$serif: 'Manuale', serif;
