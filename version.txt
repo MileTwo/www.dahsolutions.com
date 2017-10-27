@@ -6,7 +6,7 @@ Description: Pitch page for the new PCMH Assist application for DAH Solutions
 URL: https://gitlab.com/mile-two/dah.git
 Version: 1.0.0
 Git Branch: master
-Git Revision: def0245d998df278aefbd159088360025c443bb3
-Build Time: 2017-10-27 15:32:03
+Git Revision: 8a6c5387804506b0c8e987131b8d53d19f2819eb
+Build Time: 2017-10-27 15:36:04
 Build Host: Rock.local [darwin]
 
