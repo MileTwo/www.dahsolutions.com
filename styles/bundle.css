@@ -44,6 +44,12 @@
   .nix input[type="color"]:active, .nix input[type="date"]:active, .nix input[type="datetime"]:active, .nix input[type="datetime-local"]:active, .nix input[type="email"]:active, .nix input[type="month"]:active, .nix input[type="number"]:active, .nix input[type="password"]:active, .nix input[type="search"]:active, .nix input[type="tel"]:active, .nix input[type="text"]:active, .nix input[type="time"]:active, .nix input[type="url"]:active, .nix input[type="week"]:active, .nix input:not([type]):active, .nix textarea:active {
     border: 1px solid #00f; }
 
+body {
+  overflow-x: hidden; }
+
+html {
+  background-color: #44BC24; }
+
 img {
   max-width: 100%; }
 
@@ -408,6 +414,7 @@ p {
 header {
   align-items: center;
   height: 360px;
+  background-color: #4768AA;
   background-image: url("../images/splash/beach2-wide-dark.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -445,7 +452,8 @@ header {
 
 .section {
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  background: white; }
 
 .section--dark {
   background: #524B47; }

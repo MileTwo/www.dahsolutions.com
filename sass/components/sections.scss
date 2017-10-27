@@ -4,7 +4,10 @@
 
 // General sections settings
 
-.section { @include grid-container; }
+.section {
+    @include grid-container;
+    background: $clr-light;
+}
 
 .section--dark {
     background: $clr-body;
