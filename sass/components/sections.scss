@@ -17,51 +17,6 @@
 
 .product {}
 
-// Product banner
-
-.product__banner {
-  @include grid-column(1);
-  height: $row * 4;
-  background-image: url("/images/windy-road.png");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .product-banner__name {
-      margin-top: $row * 1;
-      text-align: center;
-      font-size: 5.4rem;
-      line-height: $baseline * 6;
-      color: $clr-light;
-  }
-
-  .product-banner__tagline {
-      text-align: center;
-      font-size: 2.1rem;
-      line-height: $baseline * 2;
-      color: $clr-light;
-  }
-
-  @include grid-media($break-tablet) {
-    height: $row * 6;
-    background-position: center -40px;
-    .product-banner__name {
-      margin-top: $row * 3;
-    }
-  }
-  @include grid-media($break-desktop) {
-    height: $row * 8;
-    background-position: center top;
-    .product-banner__name {
-      margin-top: $row * 5;
-    }
-  }
-  @include grid-media($break-wide) {
-    height: $row * 10;
-  }
-}
-
-
 
 // Product mailing list
 

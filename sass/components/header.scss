@@ -1,22 +1,63 @@
 @import '../defaults/vars';
 @import '../defaults/mixins';
 
-.header {
-    @include grid-container;
-    justify-content: space-between;
-    height: $row;
-    box-sizing: border-box;
-    background-color: $clr-light;
-    padding: 13px $half-gutter;
-}
-
 .header__logo {
-  line-height: $baseline * 2;
+  background-color: $clr-light;
+  background-color: transparentize($clr-light, 0.35);
+  display: block;
   font-size: 3.2rem;
-  @include position(relative, null null null -2px);
+  line-height: $baseline * 2;
+  padding: 0.5em 1.0em 0.25em 1.0em;
+  text-align: center;
+  width: 100%;
+
+  @include grid-media($break-desktop) {
+    text-align: left;
+  }
+
+  svg {
+    height: 48px;
+    margin: 0 0.5em;
+  }
 }
 
-.header__tagline {
+.header__lead {
+  color: $clr-light;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 2.7rem;
   font-style: italic;
+  justify-content: flex-end;
+  line-height: $baseline * 3;
   margin-top: 3px;
+  max-width: 600px;
+  padding: $baseline * 3 0.5em;
+  text-align: center;
+  text-shadow: 0 1px 2px transparentize($clr-primary-dk, 0);
+
+  @include grid-media($break-desktop) {
+    font-size: 4.2rem;
+    line-height: $baseline * 5;
+    max-width: 768px;
+  }
+}
+
+header {
+  align-items: center;
+  height: $row * 6;
+  background-image: url('../images/splash/beach2-wide-dark.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  @include grid-media($break-desktop) {
+    height: $row * 8;
+  }
+
+  @include grid-media($break-wide) {
+    height: $row * 10;
+  }
 }
