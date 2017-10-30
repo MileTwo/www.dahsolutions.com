@@ -55,16 +55,19 @@ img {
 button,
 .btn {
   border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   font-size: 1.8rem;
   line-height: 2rem;
   color: white;
   font-family: "Rokkitt", serif;
   background-color: #44BC24;
+  padding: 1.0rem;
+  text-shadow: 0 1px 2px rgba(45, 66, 107, 0.5);
   transition: all 0.2s linear; }
   button:hover,
   .btn:hover {
-    background-color: #86E86B;
-    color: #524B47; }
+    background-color: #5bd93a; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea {
   border: none;
@@ -105,8 +108,8 @@ blockquote {
   blockquote cite {
     display: block;
     font-family: "Manuale", serif;
-    font-size: 1.4rem;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 25px;
     font-weight: 400;
     font-style: normal;
     color: #524B47;
@@ -119,8 +122,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Manuale", serif;
-  font-size: 1.4rem;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 25px;
   font-weight: 400;
   font-style: normal;
   color: #524B47;
@@ -201,8 +204,8 @@ li {
   margin: 0;
   padding: 0;
   font-family: "Manuale", serif;
-  font-size: 1.4rem;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 25px;
   font-weight: 400;
   font-style: normal;
   color: #524B47;
@@ -214,8 +217,8 @@ p {
   margin: 0;
   padding: 0;
   font-family: "Manuale", serif;
-  font-size: 1.4rem;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 25px;
   font-weight: 400;
   font-style: normal;
   color: #524B47;
@@ -495,13 +498,14 @@ header {
     width: 75%;
     padding-left: 25px;
     padding-right: 25px;
-    height: 40px; }
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
   .mailinglist__form button {
     box-sizing: border-box;
     width: 25%;
     padding-left: 25px;
     padding-right: 25px;
-    height: 40px; }
+    cursor: pointer; }
 
 .mailinglist__label {
   box-sizing: border-box;
@@ -512,13 +516,6 @@ header {
   font-size: 1.8rem;
   padding-top: 10px;
   margin-bottom: 10px; }
-  @media screen and (min-width: 1020px) {
-    .mailinglist__label {
-      box-sizing: border-box;
-      width: 50%;
-      padding-left: 25px;
-      padding-right: 25px;
-      margin-left: 25%; } }
 
 .product__details {
   box-sizing: border-box;

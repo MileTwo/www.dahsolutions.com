@@ -17,15 +17,18 @@ img {
 button,
 .btn {
   border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   font-size: 1.8rem;
   line-height: 2rem;
   color: $clr-light;
   font-family: $slab;
   background-color: $clr-secondary;
+  padding: 1.0rem;
+  text-shadow: 0 1px 2px transparentize($clr-primary-dk, 0.5);
   transition: all 0.2s linear;
   &:hover {
-    background-color: $clr-secondary-lt;
-    color: $clr-body;
+    background-color: lighten($clr-secondary, 10%);
   }
 }
 

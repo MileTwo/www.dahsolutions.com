@@ -43,11 +43,14 @@
   }
   input {
     @include grid-column(3/4);
-    height: 40px;
+    //height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   button {
     @include grid-column(1/4);
-    height: 40px;
+    cursor: pointer;
+    //height: 40px;
   }
 }
 
@@ -57,10 +60,6 @@
   font-size: 1.8rem;
   padding-top: 10px;
   margin-bottom: $baseline;
-  @include grid-media($break-desktop) {
-      @include grid-column(1/2);
-      @include grid-push(1/4);
-  }
 }
 
 // Product details area
