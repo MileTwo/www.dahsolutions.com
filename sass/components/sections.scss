@@ -41,16 +41,23 @@
       @include grid-column(1/2);
       @include grid-push(1/4);
   }
+
   input {
     @include grid-column(3/4);
     //height: 40px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
+
   button {
     @include grid-column(1/4);
     cursor: pointer;
     //height: 40px;
+  }
+
+  label {
+    position: absolute;
+    left: -9999px;
   }
 }
 
