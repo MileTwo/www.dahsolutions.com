@@ -47,7 +47,7 @@ header {
   align-items: center;
   height: $row * 6;
   background-color: $clr-primary;
-  background-image: url('../images/splash/beach2-wide-dark.jpg');
+  background-image: url('../images/splash/beach2-wide-dark-1024.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,6 +55,7 @@ header {
   flex-direction: column;
 
   @include grid-media($break-desktop) {
+      background-image: url('../images/splash/beach2-wide-dark-3k.jpg');
     height: $row * 8;
   }
 
