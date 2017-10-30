@@ -31,7 +31,15 @@ $break-large-phone: 570px;
     @include grid-column(2/3);
   }
 }
+.staff__contact {
+  a {
+    color: $clr-hyperlink-lt;
 
+    &:hover {
+      color: lighten($clr-hyperlink-lt, 10%);
+    }
+  }
+}
 .staff__name {
   display: block;
   color: $clr-secondary-lt;

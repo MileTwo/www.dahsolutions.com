@@ -286,6 +286,11 @@ p {
       padding-left: 25px;
       padding-right: 25px; } }
 
+.staff__contact a {
+  color: #50CAF2; }
+  .staff__contact a:hover {
+    color: #7fd8f6; }
+
 .staff__name {
   display: block;
   color: #86E86B;
