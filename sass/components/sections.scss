@@ -88,17 +88,26 @@
     }
 }
 
-.details__features {
+.details__preview {
     @include grid-column(1);
     @include grid-media($break-desktop) {
         @include grid-column(7/12);
+        text-align: left;
     }
-    h4 {
-      margin-top: 8px;
-      margin-bottom: 2px;
+
+    padding: $baseline * 2;
+    text-align: center;
+
+    img {
+        box-shadow: 0 3px 3.0rem transparentize($clr-black, 0.85);
+        max-width: 768px;
+        width: 100%;
+
+        &:hover {
+            box-shadow: 0 3px 3.0rem transparentize($clr-black, 0.65);
+        }
     }
 }
-
 
 // Main About DAH section
 
