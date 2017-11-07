@@ -88,6 +88,13 @@
     }
 }
 
+.details__features {
+    @include grid-column(1);
+    @include grid-media($break-desktop) {
+        @include grid-column(5/12);
+    }
+}
+
 .details__preview {
     @include grid-column(1);
     @include grid-media($break-desktop) {

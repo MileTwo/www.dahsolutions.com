@@ -552,6 +552,18 @@ header {
       padding-left: 25px;
       padding-right: 25px; } }
 
+.details__features {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px; }
+  @media screen and (min-width: 1020px) {
+    .details__features {
+      box-sizing: border-box;
+      width: 41.66667%;
+      padding-left: 25px;
+      padding-right: 25px; } }
+
 .details__preview {
   box-sizing: border-box;
   width: 100%;
